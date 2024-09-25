@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<head>
+<title>Carlos Poles Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
+</head>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu"> <i class="fa fa-remove"></i></a>
+    <h4><b>PORTFOLIO</b></h4>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a> 
+  </div>
+  <div class="w3-panel w3-large">
+    <a href="https://github.com/cpoles" style="text-decoration:none"><i class="fab fa-github w3-hover-opacity"></i> </a>
+    <a href="https://linkedin.com/in/carlospoles" style="text-decoration:none"><i class="fab fa-linkedin w3-hover-opacity"></i> </a>
+    <a href="https://medium.com/@cpoles" style="text-decoration:none"><i class="fab fa-medium w3-hover-opacity"></i></a>
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header id="portfolio">
+    <a href="#"><img src="/w3images/avatar_g2.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+    <h1><b>My Portfolio</b></h1>
+    <div class="w3-section w3-bottombar w3-padding-16">
+      <span class="w3-margin-right">Filter:</span> 
+      <a href="index.html" style="text-decoration:none"><button class="w3-button w3-white"><i class="fa fa-desktop w3-margin-right"></i>Computer Science</button></a>
+      <a href="data_science.html" style="text-decoration:none"> <button class="w3-button w3-white"><i class="fa fa-laptop w3-margin-right"></i>Data Science</button></a>
+    </div>
+    </div>
+  </header>
+  
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <a href="https://github.com/cpoles/cs50-ai/tree/main/degrees"><img src="images/degrees.png" alt="Degrees" style="width:100%" class="w3-hover-opacity"></a>
+      <div class="w3-container w3-white">
+        <p><b>Degrees</b></p>
+        <p>The Six Degrees of Kevin Bacon game as a Search Problem. Implemented the Breadth-First Search (BFS) Algorithm to find the degrees of separation between two actors based on the common films they participated.</p>
+        <i class="fab fa-python w3-hover-opacity fa-lg" style="height: 30px;"></i>     
+    </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+        <a href="https://github.com/cpoles/cs50-ai/tree/main/tictactoe"><img src="images/tictactoe.png" alt="TicTacToe" style="width:100%" class="w3-hover-opacity"></a>
+      <div class="w3-container w3-white">
+        <p><b>Tic-Tac-Toe</b></p>
+        <p>Tic-Tac-Toe game as Adversarial Search Problem. The AI optimally plays using the Minimax algorithm with Alpha-Beta pruning </p>
+        <i class="fab fa-python w3-hover-opacity fa-lg" style="height: 30px;"></i>     
+    </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+        <a href="https://github.com/cpoles/cs50-ai/tree/main/knights"><img src="images/knights.png" alt="Knights" style="width:100%" class="w3-hover-opacity"></a>
+      <div class="w3-container w3-white">
+        <p><b>Knights</b></p>
+        <p>Knowledge representation puzzle project. Propositional Logic problem in the 'Knights and Knaves' style, solved utilizing propositional symbols for representing knowledge.</p>
+        <i class="fab fa-python w3-hover-opacity fa-lg" style="height: 30px;"></i>     
+    </div>
+    </div>
+
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+        <a href="https://github.com/cpoles/cs50-ai/tree/main/minesweeper"><img src="images/minesweeper.png" alt="Minesweeper" style="width:100%" class="w3-hover-opacity"></a>
+      <div class="w3-container w3-white">
+        <p><b>Minesweeper</b></p>
+        <p>Knowledge representation project. The classic minesweeper from Windows. The project is to write an AI that based on a knowledge base can make inferences to create a new safe game state.</p>
+        <i class="fab fa-python w3-hover-opacity fa-lg" style="height: 30px;"></i>      
+    </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+        <a href="https://github.com/cpoles/cs50-ai/tree/main/pagerank"><img src="images/pagerank.png" alt="PageRank" style="width:100%" class="w3-hover-opacity"></a>
+      <div class="w3-container w3-white">
+        <p><b>PageRank</b></p>
+        <p>Project about uncertainty and probabilities. Write an AI for ranking webpages by importance based on Googles's Page Rank algorithm.</p>
+        <i class="fab fa-python w3-hover-opacity fa-lg" style="height: 30px;"></i>      
+    </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+        <a href="https://github.com/cpoles/cs50-ai/tree/main/heredity"><img src="images/heredity.png" alt="Heredity" style="width:100%" class="w3-hover-opacity"></a>
+      <div class="w3-container w3-white">
+        <p><b>Heredity</b></p>
+        <p>Project about uncertainty and probabilities. Write an AI to assess the likelihood that a person will have a particular genetic trait.</p>
+        <i class="fab fa-python w3-hover-opacity fa-lg" style="height: 30px;"></i>      
+    </div>
+    </div>
+
+<!-- Third Photo Grid-->
+<div class="w3-row-padding"></div>
+    <div class="w3-third w3-container w3-margin-bottom">
+        <a href="https://github.com/cpoles/cs50-ai/tree/main/crossword"><img src="images/crossword.png" alt="Crossword" style="width:100%" class="w3-hover-opacity"></a>
+      <div class="w3-container w3-white">
+        <p><b>Crossword</b></p>
+        <p>Crossword generation as an constraint satisfaction problem. Write an AI to generate crossword puzzles using AC3 and Backtrack algorithms.</p>
+        <i class="fab fa-python w3-hover-opacity fa-lg" style="height: 30px;"></i>    
+    </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+        <a href="https://github.com/cpoles/cs50-ai/tree/main/shopping"><img src="images/shopping.png" alt="Shopping" style="width:100%" class="w3-hover-opacity"></a>
+      <div class="w3-container w3-white">
+        <p><b>Shopping</b></p>
+        <p>Customer purchase prediction as a classification ML problem. Classification using K-Nearest Neighbours algorithm </p>
+        <i class="fab fa-python w3-hover-opacity fa-lg" style="height: 30px;"></i> 
+        <img src="assets/icons/sklearn.png" style="height: 30px">
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+        <a href="https://github.com/cpoles/cs50-ai/tree/main/nim"><img src="images/nim.png" alt="NIM" style="width:100%" class="w3-hover-opacity"></a>
+      <div class="w3-container w3-white">
+        <p><b>Nim</b></p>
+        <p>Reinforcement Learning project. Used Q-Learning algorithm for learning and E-greedy for decision making to write an AI capable of playing the game Nim</p>
+        <i class="fab fa-python w3-hover-opacity fa-lg" style="height: 30px;"></i> 
+      </div>
+    </div>
+
+<!-- Fourth Photo Grid-->
+<div class="w3-row-padding"></div>
+    <div class="w3-third w3-container w3-margin-bottom">
+        <a href="https://github.com/cpoles/cs50-ai/tree/main/traffic"><img src="images/traffic.png" alt="Traffic" style="width:100%" class="w3-hover-opacity"></a>
+      <div class="w3-container w3-white">
+        <p><b>Traffic</b></p>
+        <p>Computer Vision project. Write an AI to classify traffic signs using Convolutional Neural Networks.</p>
+        <i class="fab fa-python w3-hover-opacity fa-lg" style="height: 30px;"></i>
+        <img src="assets/icons/tensorflow.png" style="height: 30px">
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+        <a href="https://github.com/cpoles/cs50-ai/tree/main/parser"><img src="images/parser.png" alt="Parser" style="width:100%" class="w3-hover-opacity"></a>
+      <div class="w3-container w3-white">
+        <p><b>Parser</b></p>
+        <p>Natural Language Processing project. A parser for determining the structure of a sentence. </p>
+        <i class="fab fa-python w3-hover-opacity fa-lg" style="height: 30px;">
+        </i><strong>NLTK</strong>
+    </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+        <a href="https://github.com/cpoles/cs50-ai/tree/main/questions"><img src="images/questions.png" alt="Questions" style="width:100%" class="w3-hover-opacity"></a>
+      <div class="w3-container w3-white">
+        <p><b>Questions</b></p>
+        <p>Natural Language Processing project. Write an AI to answer questions using tf-idf for ranking potential sentences.</p>
+        <i class="fab fa-python w3-hover-opacity fa-lg" style="height: 30px;">
+        </i><strong>NLTK</strong>
+      </div>
+    </div>
+  </div>
+ 
+    
+  
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>
